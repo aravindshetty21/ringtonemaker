@@ -16,6 +16,7 @@ type Region = {
 
 export default function WaveformEditor({ audioUrl, onRegionChange }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const regionRef = useRef<any>(null);
   const waveSurferRef = useRef<WaveSurfer | null>(null);
   const clickTimes = useRef<number[]>([]);
